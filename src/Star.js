@@ -7,15 +7,9 @@ const Star = ({ stars, reviews }) => {
     let number = index + 0.5;
     // debugger;
     return (
-      <span key={index}>
-        {stars >= index + 1 ? (
-          <FaStar className="icon" />
-        ) : stars >= number ? (
-          <FaStarHalfAlt className="icon" />
-        ) : (
-          <AiOutlineStar className="icon" />
-        )}
-      </span>
+      stars >= index+1 ?  <FaStar className="icon"/>:
+      stars>=number ?  <FaStarHalfAlt className="icon"/>:
+      <AiOutlineStar className="icon"/>
     );
   });
 

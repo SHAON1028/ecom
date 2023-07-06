@@ -35,7 +35,7 @@ export const AppProvider = ({ children }) => {
   };
 // api call for single products
 const getSingleProduct = async (url) => {
-  console.log(url)
+  // console.log(url)
   dispatch({ type: "SET_SINGLE_LOADING" });
   try {
     const res = await axios.get(url);

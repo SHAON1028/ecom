@@ -5,14 +5,14 @@ import Product from "./Product";
 
 const FeatureProducts = () => {
   const { isLoading, featureProducts } = useProductContext();
-  console.log(
-    "🚀 ~ file: FeatureProducts.js:8 ~ FeatureProducts ~ isLoading:",
-    isLoading
-  );
-  console.log(
-    "🚀 ~ file: FeatureProducts.js:8 ~ FeatureProducts ~ featureProducts:",
-    featureProducts
-  );
+  // console.log(
+  //   "🚀 ~ file: FeatureProducts.js:8 ~ FeatureProducts ~ isLoading:",
+  //   isLoading
+  // );
+  // console.log(
+  //   "🚀 ~ file: FeatureProducts.js:8 ~ FeatureProducts ~ featureProducts:",
+  //   featureProducts
+  // );
   if (isLoading) {
     return <div>Loading...</div>;
   }
